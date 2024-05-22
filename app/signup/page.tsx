@@ -1,7 +1,6 @@
 import AcmeLogo from '@/app/ui/acme-logo';
-import LoginForm from '@/app/ui/login-form';
-import Link from 'next/link';
-
+import SignupForm from '@/app/ui/signup-form';
+ 
 export default function LoginPage() {
   return (
     <main className="flex items-center justify-center md:h-screen">
@@ -11,13 +10,7 @@ export default function LoginPage() {
             <AcmeLogo />
           </div>
         </div>
-        <LoginForm />
-        <Link
-          href="/signup"
-          className="flex self-start px-6 py-3 text-xs font-medium text-blue-500 transition-colors hover:text-slate-700 md:text-base"
-        >
-          <span>Sign up</span>
-        </Link>
+        <SignupForm />
       </div>
     </main>
   );
